@@ -1,6 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Алекс Шевляков](https://up.htmlacademy.ru/htmlcss/14/user/217132).
+* Наставник: [Дмитрий Сухинин](https://htmlacademy.ru/profile/id19726).
 
 ---
 
