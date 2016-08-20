@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Gllacy - products</title>
+  <title>Gllacy - Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="wrapper">
-      <a href="index.html" class="logo">
-        <img src="img/logo.png" width="154" height="64" alt="Gllacy">
-      </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Каталог</a>
-            <ul class="main-nav-sub">
-              <li><a class="main-nav-sub-new" href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li>Доставка и оплата</li>
-          <li>О компании</li>
-        </ul>
-      </nav>
-      <div class="page-header-user">
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-search page-header-search-link" href="#">Поиск</a>
-              <form class="page-header-search-form" action="#" method="get">
-                <input type="text" name="search" placeholder="что ищем?" required="">
-              </form>
-          </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-login" href="#">Вход</a>
-              <form "page-header-login-form" action="#" method="post">
-                <input type="email" name="email" placeholder="Электронная почта" required="">
-                <input type="password" name="pass" placeholder="Пароль" required="">
-                <input class="btn" type="submit" value="Войти" name="submit">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
-          </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-basket" href="#">Вход</a>
-              <form "page-header-login-form" action="#" method="post">
-                <!--???-->
-                <span class="cart-field-price">Итого: 750 руб.</span>
-                <a class="btn btn-basket" href="#">Оформить заказ</a>
-              </form>
-          </div>
-      </div>
-      <div class="page-header-info">
-        С 10 до 20, ежедневно
-        <strong>8 812 450-25-25</strong>
-      </div>
-    </div>
-  </header>
+
+  <div class="page-slider-wrapper">
+      <header class="page-header">
+          <div class="wrapper">
+              <div class="logo">
+                  <img src="img/logo.png" width="154" height="64" alt="Gllacy">
+              </div>
+              <nav class="main-nav">
+                  <ul>
+                      <li><a href="#">Каталог</a>
+                          <ul class="main-nav-sub">
+                              <li><a class="main-nav-sub-new" href="#">Новинки</a></li><hr>
+                              <li><a href="catalog.html">Сливочное</a></li>
+                              <li><a href="#">Щербеты</a></li>
+                              <li><a href="#">Фруктовый лед</a></li>
+                              <li><a href="#">Мелорин</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Доставка и оплата</a></li>
+                      <li><a href="#">О компании</a></li>
+                  </ul>
+              </nav>
+              <div class="page-header-user">
+                  <div class="page-header-user-item">
+                      <a class="btn-form btn-form-search" href="#">Поиск</a>
+                      <form class="page-header-search-form" action="#" method="get">
+                          <input type="text" name="search" placeholder="что ищем?" required="">
+                      </form>
+                  </div>
+                  <div class="page-header-user-item">
+                      <a class="btn-form btn-form-login" href="#">Вход</a>
+                      <form class="page-header-login-form" action="#" method="post">
+                          <input type="email" name="email" placeholder="Электронная почта" required="">
+                          <input type="password" name="pass" placeholder="Пароль" required="">
+                          <input class="btn btn-login" type="submit" value="Войти" name="submit">
+                          <a href="#">Забыли пароль?</a>
+                          <a href="#">Новая регистрация</a>
+                      </form>
+                  </div>
+                  <div class="page-header-user-item">
+                      <a class="btn-form btn-form-basket" href="#">Пусто</a>
+                      <div class="page-header-user-item">
+                          <div class="page-header-basket-form">
+                              <table class="basket-table">
+                                  <tr class="basket-table-row">
+                                      <td class="basket-table-cell">
+                                          <a class="btn-delete" href="#" title="Delete">
+                                              <svg class="svg-close">
+                                                  <use xlink:href=""></use>
+                                              </svg>
+                                          </a>
+                                      </td>
+                                      <td class="basket-table-cell">
+                                          <a class="basket-table-link" href="#">
+                                              <img class="basket-img" src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
+                                          </a>
+                                      </td>
+                                      <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 200 руб.</span></td>
+                                      <td class="basket-table-cell">300 руб.</td>
+                                  </tr>
+                                  <tr class="basket-table-row">
+                                      <td class="basket-table-cell">
+                                          <a class="btn-delete" href="#" title="Delete">
+                                              <svg class="svg-close">
+                                                  <use xlink:href=""></use>
+                                              </svg>
+                                          </a>
+                                      </td>
+                                      <td class="basket-table-cell">
+                                          <a class="basket-table-link" href="#">
+                                              <img class="basket-img" src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
+                                          </a>
+                                      </td>
+                                      <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 300 руб.</span></td>
+                                      <td class="basket-table-cell">450 руб.</td>
+                                  </tr>
+                              </table>
+                              <hr class="basket-line">
+                              <div class="basket-bill">Итого: <span class="result">750 руб.</span></div>
+                              <input class="btn btn-basket" type="submit" name="btn-basket" id="btn-basket" value="Оформить заказ">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="page-header-info">
+                      С 10 до 20, ежедневно
+                      <br>
+                      <strong>8 812 450-25-25</strong>
+                  </div>
+              </div>
+      </header>
+
   <main class="content">
     <div class="wrapper clearfix">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
+        <li>»</li>
         <li><a href="#">Каталог</a></li>
-        <li><a class="breadcrumbs-active">Сливочное</a></li>
+        <li>»</li>
+        <li>Сливочное</li>
       </ul>
       <h2 class="products-title">Сливочное мороженое</h2>
       <form class="filter" action="#" method="post">
@@ -80,7 +121,7 @@
         </fieldset>
         <fieldset class="filter-item">
           <div class="filter-price-control">
-            <span>Цена</span><input class="price-min" type="text" value="100 руб.">
+            <span>Цена:</span><input class="price-min" type="text" value="100 руб.">
             <span> - </span><input class="price-max" type="text" value="500 руб.">
           </div>
           <div class="filter-item-box">
@@ -256,7 +297,7 @@
       </ul>
       <div class="footer-link">
         <div class="footer-link-left">
-          <a class="link-marked" href="#">Для поставщиков</a>
+          <a class="link-marked" href="#">Для поставщиков</a><br>
           <a href="#">О производстве</a>
         </div>
         <div class="footer-link-right">
