@@ -294,10 +294,6 @@ hr
     display: block;
     float: left;
 }
-.breadcrumbs li
-{
-    display: inline-block;
-}
 .filter-item
 {
     display: inline-block;
@@ -1261,6 +1257,19 @@ hr
     list-style: none;
 
     color: #fff;
+}
+.breadcrumbs li
+{
+    display: inline-block;
+    padding: 0 21px 0 0;
+    position: relative;
+}
+.breadcrumbs li:not(:last-child)::after {
+    display: block;
+    content: "\00BB";
+    position: absolute;
+    top: 0px;
+    right: 6px;
 }
 .breadcrumbs a {
   text-decoration: underline;
