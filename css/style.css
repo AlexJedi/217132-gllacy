@@ -24,7 +24,7 @@ a
 
     color: #fff;
 }
-b
+strong
 {
     font-size: 18px;
     font-weight: 700;
@@ -592,9 +592,26 @@ color: white;
 }
 .filter-item-box select:hover
 {
-  padding: 7px 25px 7px 16px;
+    padding: 7px 25px 7px 16px;
     color: black;
     background: white;
+}
+.slider-box
+{
+  position: relative;
+min-height: 36px;
+padding-left: 15px;
+padding-right: 15px;
+background: #aabab0;
+border-radius: 20px;
+overflow: hidden;
+}
+.range-slider .background
+{
+    height: 4px;
+    width: 98px;
+    margin-left: 35px;
+    background: #f8f7f4;
 }
 .list-filter::after{
       content: '';
@@ -615,7 +632,7 @@ color: white;
     font-size: 14px;
 
     width: 60px;
-    margin-left: 5px;
+
 
     color: #fff;
     border: none;
@@ -623,12 +640,12 @@ color: white;
 }
 .filter-fil-check
 {
-    display: block;
+        padding: 7px 25px 7px 16px;
+}
+.filter-fat-choise
+{
+        padding: 7px 25px 7px 16px;
 
-    height: 36px;
-
-    border-radius: 15px;
-    background: rgba(255, 255, 255, .2);
 }
 .slider-radio[id='btn-slider1']:checked ~ .page-slider-wrapper
 {
@@ -1037,6 +1054,15 @@ min-height: 229px;
     display:block;
     margin-bottom: 12px;
 }
+.contacts-info a
+{
+    display:block;
+    margin-bottom: 5px;
+}
+.contacts-info strong
+{
+    display:block;
+}
 .contacts-tel
 {
     font-size: 18px;
@@ -1183,19 +1209,110 @@ color: #FFBC9E;
 .products-title {
   margin-top: -10px;
 }
-.filter-price-control span
+.filter-price-control
 {
+    max-width: 195px;
+    margin-bottom: 5px;
     font-size: 14px;
-    font-weight: 500;
+    white-space: nowrap;
+    font-size: 14px;
 }
 .filter-btn {
 background-color: rgba(255, 255, 255, .2);
 border-radius: 30px;
+font-weight: 500;
 color:white;
 border: 2px solid #fff;
 padding: 10px 30px;
-font-size: 16px;
 line-height: 0.9;
+cursor: pointer;
+}
+.filter-btn:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 30px;
+color:black;
+border: 2px solid #fff;
+padding: 10px 30px;
+font-weight: 500;
+line-height: 0.9;
+cursor: pointer;
+}
+.scale
+{
+position: absolute;
+top: 8px;
+left: 44px;
+width: 20px;
+height: 20px;
+background: #f8f7f4;
+cursor: pointer;
+border-radius: 50%;
+}
+.max-toggle {
+    left: 132px;
+}
+.min-toggle {
+    left: 34px;
+}
+
+.filter-fat-choise label
+{
+    position: relative;
+    max-width: 750px;
+    min-height: 22px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    padding-left: 29px;
+    font-size: 16px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.filter-fat-choise label:before
+{    content: '';
+    position: absolute;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #aabab0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.4px #fff;
+}
+.filter-fat-choise input[type="radio"]
+{
+    display: none;
+}
+.filter-fat-choise input[type=radio]:checked+label::before {
+    background-color: #fff;
+}
+.filter-fil-check label
+{
+  display: inline-block;
+    position: relative;
+    max-width: 750px;
+    min-height: 22px;
+    margin-right: 25px;
+    padding-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.filter-fil-check label:before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.filter-fil-check input[type=radio]:checked+label::before {
+    background: url('../img/sprite.png') no-repeat 5px -416px
+}
+.filter-fil-check input[type="checkbox"]
+{
+    display: none;
 }
 .paginator {
 white-space: nowrap;
