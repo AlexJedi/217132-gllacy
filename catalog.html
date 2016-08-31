@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Gllacy - Каталог</title>
@@ -7,19 +11,18 @@
 </head>
 
 <body>
-
   <div class="page-slider-wrapper">
     <header class="page-header">
       <div class="wrapper clearfix">
         <div class="logo">
-          <img src="img/logo.png" width="154" height="64" alt="Gllacy">
+          <a href="index.html"><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
         </div>
         <nav class="main-nav">
           <ul>
-            <li class="main-nav-catalog-active"><a href="#">Каталог</a>
+            <li><a class="main-nav-catalog-active" href="#">Каталог</a>
               <ul class="main-nav-sub">
                 <li><a class="main-nav-sub-new" href="#">Новинки</a></li>
-                <li><a class="main-nav-active" href="catalog.html">Сливочное</a></li>
+                <li><a class="main-nav-active" href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
@@ -29,62 +32,65 @@
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
-        <div class="page-header-user">
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-search" href="#">Поиск</a>
-            <form class="page-header-search-form form" action="#" method="get">
-              <input type="text" name="search" placeholder="Что ищем?" required="">
+        <div class="user-block">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-search-btn" href="#">Поиск</a>
+            <form class="user-block-search-form user-block-form" action="#" method="get">
+              <input type="text" id="user-block-search-field" name="btn-search" required="">
+              <label for="user-block-search-field">Что ищем?</label>
             </form>
           </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-login" href="#">Вход</a>
-            <form class="page-header-login-form form" action="#" method="post">
-              <input type="email" name="email" placeholder="Электронная почта" required="">
-              <input type="password" name="pass" placeholder="Пароль" required="">
-              <input class="btn btn-login" type="submit" value="Войти" name="submit">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-login-btn" href="#">Вход</a>
+            <form class="user-block-login-form user-block-form" action="#" method="post">
+              <input type="email" id="user-block-email-field" name="email" required="">
+              <label for="user-block-email-field">Электронная почта</label>
+              <input type="password" id="user-block-password-field" name="pass" required="">
+              <label for="user-block-password-field">Пароль</label>
+              <input type="submit" value="Войти" name="btn-login">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
           </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-basket" href="#">Пусто</a>
-            <div class="page-header-basket-form form">
-              <table class="basket-table">
-                <tr class="basket-table-row">
-                  <td class="basket-table-cell">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-basket-btn" href="#">Пусто</a>
+            <form class="user-block-basket-form user-block-form">
+              <table class="user-block-basket-table">
+                <tr>
+                  <td class="user-block-basket-cell">
                     <a class="btn-delete" href="#" title="Delete"></a>
                   </td>
-                  <td class="basket-table-cell">
-                    <a class="basket-table-link" href="#">
-                      <img class="basket-img" src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
+                  <td class="user-block-basket-cell">
+                    <a class="user-block-basket-link" href="#">
+                      <img src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
                     </a>
                   </td>
-                  <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 200 руб.</span></td>
-                  <td class="basket-table-cell">300 руб.</td>
+                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 200 руб.</span></td>
+                  <td class="user-block-basket-cell">300 руб.</td>
                 </tr>
-                <tr class="basket-table-row">
-                  <td class="basket-table-cell">
+                <tr>
+                  <td class="user-block-basket-cell">
                     <a class="btn-delete" href="#" title="Delete"></a>
                   </td>
-                  <td class="basket-table-cell">
-                    <a class="basket-table-link" href="#">
-                      <img class="basket-img" src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
+                  <td class="user-block-basket-cell">
+                    <a class="user-block-basket-link" href="#">
+                      <img src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
                     </a>
                   </td>
-                  <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 300 руб.</span></td>
-                  <td class="basket-table-cell">450 руб.</td>
+                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 300 руб.</span></td>
+                  <td class="user-block-basket-cell">450 руб.</td>
                 </tr>
               </table>
-              <div class="basket-bill">Итого: 750 руб.</div>
-              <input class="btn btn-basket" type="submit" name="btn-basket" id="btn-basket" value="Оформить заказ">
-            </div>
+              <div class="user-block-basket-bill">Итого: 750 руб.</div>
+              <input type="submit" name="btn-basket" value="Оформить заказ">
+            </form>
           </div>
-          <div class="page-header-info">
+          <div class="user-block-info">
             С 10 до 20, ежедневно
-            <br>
             <strong>8 812 450-25-25</strong>
           </div>
         </div>
+      </div>
     </header>
 
     <main class="content">
@@ -92,68 +98,62 @@
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог</a></li>
-          <li>Сливочное</li>
+          <li><a>Сливочное</a></li>
         </ul>
         <h2 class="products-title">Сливочное мороженое</h2>
-        <form class="filter" action="#" method="post">
-          <fieldset class="filter-item">
-            <div class="filter-item-name">Сортировка:</div>
-            <div class="filter-item-box list-filter">
-              <select class="filter-item-type" name="filter-item-type">
+
+        <div class="filter">
+          <form action="#" method="post">
+            <fieldset class="filter-item filter-sort">
+              <legend>Сортировка:</legend>
+              <select name="sort" id="sort-id">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
                 <option value="fat">по жирности</option>
               </select>
-            </div>
-          </fieldset>
-          <fieldset class="filter-item">
-            <div class="filter-price-control">
-              <span>Цена:</span>
-              <input class="price-min" type="text" value="100 руб.">
-              <span> - </span>
-              <input class="price-max" type="text" value="500 руб.">
-            </div>
-            <div class="filter-item-box slider-box">
+            </fieldset>
+            <fieldset class="filter-item filter-price">
+              <legend>Цена:
+                <output name="less">100</output> руб. &mdash;
+                <output name="more">500</output> руб.</legend>
               <div class="range-slider">
-                <div class="bar"></div>
-                <div class="scale min-scale"></div>
-                <div class="scale max-scale"></div>
+                <div class="range-bar"></div>
+                <div class="range-toggle"></div>
+                <div class="range-toggle"></div>
               </div>
-            </div>
-          </fieldset>
-
-          <fieldset class="filter-item">
-            <div class="filter-item-name">Жирность:</div>
-            <div class="filter-fat-choise filter-item-box">
-              <input type="radio" id="btn-radio-1" value="0%" name="fat">
-              <label for="btn-radio-1">0%</label>
-              <input type="radio" id="btn-radio-2" value="10%" name="fat" checked="">
-              <label for="btn-radio-2">до 10%</label>
-              <input type="radio" id="btn-radio-3" value="30%" name="fat">
-              <label for="btn-radio-3">до 30%</label>
-              <input type="radio" id="btn-radio-4" value="30%" name="fat">
-              <!--+30%??-->
-              <label for="btn-radio-4">выше 30%</label>
-            </div>
-          </fieldset>
-          <fieldset class="filter-item">
-            <div class="filter-item-name">Наполнители:</div>
-            <div class="filter-fil-check filter-item-box">
-              <input type="checkbox" id="btn-checkbox-1" name="chocolate" checked="">
-              <label for="btn-checkbox-1">шоколадные</label>
-              <input type="checkbox" id="btn-checkbox-2" name="powder" checked="">
-              <label for="btn-checkbox-2">сахарные присыпки</label>
-              <input type="checkbox" id="btn-checkbox-3" name="fruit">
-              <label for="btn-checkbox-3">фрукты</label>
-              <input type="checkbox" id="btn-checkbox-4" name="syrup">
-              <label for="btn-checkbox-4">сиропы</label>
-              <input type="checkbox" id="btn-checkbox-5" name="jam">
-              <label for="btn-checkbox-5">джемы</label>
-            </div>
-          </fieldset>
-          <input class="filter-btn" type="submit" value="Применить" name="filter-btn">
-        </form>
+            </fieldset>
+            <fieldset class="filter-item filter-fat">
+              <legend>Жирность:</legend>
+              <div class="filter-fat-choise filter-box">
+                <input type="radio" name="fatness" id="fat-1" value="fat1">
+                <label for="fat-1">0%</label>
+                <input type="radio" name="fatness" id="fat-2" value="fat2" checked>
+                <label for="fat-2">до 10%</label>
+                <input type="radio" name="fatness" id="fat-3" value="fat3">
+                <label for="fat-3">до 30%</label>
+                <input type="radio" name="fatness" id="fat-4" value="fat4">
+                <label for="fat-4">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-item filter-add">
+              <legend>Наполнители:</legend>
+              <div class="filter-fat-choise filter-box">
+                <input type="checkbox" name="add" value="add1" id="add-1" checked>
+                <label for="add-1">шоколадные</label>
+                <input type="checkbox" name="add" value="add2" id="add-2" checked>
+                <label for="add-2">сахарные присыпки</label>
+                <input type="checkbox" name="add" value="add3" id="add-3">
+                <label for="add-3">фрукты</label>
+                <input type="checkbox" name="add" value="add4" id="add-4">
+                <label for="add-4">сиропы</label>
+                <input type="checkbox" name="add" value="add5" id="add-5">
+                <label for="add-5">джемы</label>
+              </div>
+            </fieldset>
+            <input class="filter-btn" type="submit" value="Применить" name="filter-btn">
+          </form>
+        </div>
 
         <div class="products">
           <div class="products-item">
@@ -266,18 +266,19 @@
         </div>
 
         <div class="paginator">
-          <a class="paginator-control paginator-prev" href="#">Назад</a>
+          <a class="paginator-control paginator-prev" href="#"></a>
           <a class="paginator-page paginator-active">1</a>
           <a class="paginator-page" href="#">2</a>
           <a class="paginator-page" href="#">3</a>
           <a class="paginator-page" href="#">4</a>
           <a class="paginator-page" href="#">5</a>
-          <a class="paginator-control paginator-next" href="#">Вперед</a>
+          <a class="paginator-control paginator-next" href="#"></a>
         </div>
       </div>
     </main>
-    <footer class="page-footer page-footer-line">
+    <footer class="page-footer">
       <div class="wrapper clearfix">
+        <div class="page-footer-line"></div>
         <ul class="page-footer-social">
           <li><a class="social-btn social-btn-twitter" href="#">twitter</a></li>
           <li><a class="social-btn social-btn-instagram" href="#">instagram</a></li>
@@ -296,6 +297,21 @@
         </div>
       </div>
     </footer>
+    <div class="feedback">
+      <form class="feedback-form" action="#" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <a class="feedback-close-btn" href="#"></a>
+        <input type="text" id="name-field" name="name-field" required>
+        <label for="name-field">Как вас зовут?</label>
+        <input type="text" id="email-field" name="email-field" required>
+        <label for="email-field">Ваша почта для ответа?</label>
+        <textarea id="text-area" name="area" rows="6" required></textarea>
+        <label for="text-area">Напишите что-нибудь...</label>
+        <input type="submit" value="Отправить" name="feedback-btn">
+      </form>
     </div>
+  </div>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
+
+</html>

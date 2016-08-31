@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Gllacy - Главная</title>
@@ -17,7 +19,7 @@
     <header class="page-header">
       <div class="wrapper clearfix">
         <div class="logo">
-          <img src="img/logo.png" width="154" height="64" alt="Gllacy">
+          <a><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
         </div>
         <nav class="main-nav">
           <ul>
@@ -34,66 +36,69 @@
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
-        <div class="page-header-user">
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-search" href="#">Поиск</a>
-            <form class="page-header-search-form form" action="#" method="get">
-              <input type="text" name="search" placeholder="Что ищем?" required="">
+        <div class="user-block">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-search-btn" href="#">Поиск</a>
+            <form class="user-block-search-form user-block-form" action="#" method="get">
+              <input type="text" id="user-block-search-field" name="btn-search" required="">
+              <label for="user-block-search-field">Что ищем?</label>
             </form>
           </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-login" href="#">Вход</a>
-            <form class="page-header-login-form form" action="#" method="post">
-              <input type="email" name="email" placeholder="Электронная почта" required="">
-              <input type="password" name="pass" placeholder="Пароль" required="">
-              <input class="btn btn-login" type="submit" value="Войти" name="submit">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-login-btn" href="#">Вход</a>
+            <form class="user-block-login-form user-block-form" action="#" method="post">
+              <input type="email" id="user-block-email-field" name="email" required="">
+              <label for="user-block-email-field">Электронная почта</label>
+              <input type="password" id="user-block-password-field" name="pass" required="">
+              <label for="user-block-password-field">Пароль</label>
+              <input type="submit" value="Войти" name="btn-login">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
           </div>
-          <div class="page-header-user-item">
-            <a class="btn-form btn-form-basket" href="#">Пусто</a>
-            <div class="page-header-basket-form form">
-              <table class="basket-table">
-                <tr class="basket-table-row">
-                  <td class="basket-table-cell">
+          <div class="user-block-item">
+            <a class="user-block-btn user-block-basket-btn" href="#">Пусто</a>
+            <form class="user-block-basket-form user-block-form">
+              <table class="user-block-basket-table">
+                <tr>
+                  <td class="user-block-basket-cell">
                     <a class="btn-delete" href="#" title="Delete"></a>
                   </td>
-                  <td class="basket-table-cell">
-                    <a class="basket-table-link" href="#">
-                      <img class="basket-img" src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
+                  <td class="user-block-basket-cell">
+                    <a class="user-block-basket-link" href="#">
+                      <img src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
                     </a>
                   </td>
-                  <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 200 руб.</span></td>
-                  <td class="basket-table-cell">300 руб.</td>
+                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 200 руб.</span></td>
+                  <td class="user-block-basket-cell">300 руб.</td>
                 </tr>
-                <tr class="basket-table-row">
-                  <td class="basket-table-cell">
+                <tr>
+                  <td class="user-block-basket-cell">
                     <a class="btn-delete" href="#" title="Delete"></a>
                   </td>
-                  <td class="basket-table-cell">
-                    <a class="basket-table-link" href="#">
-                      <img class="basket-img" src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
+                  <td class="user-block-basket-cell">
+                    <a class="user-block-basket-link" href="#">
+                      <img src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
                     </a>
                   </td>
-                  <td class="basket-table-cell">1,5 кг <span class="basket-item-price">х 300 руб.</span></td>
-                  <td class="basket-table-cell">450 руб.</td>
+                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 300 руб.</span></td>
+                  <td class="user-block-basket-cell">450 руб.</td>
                 </tr>
               </table>
-              <div class="basket-bill">Итого: 750 руб.</div>
-              <input class="btn btn-basket" type="submit" name="btn-basket" id="btn-basket" value="Оформить заказ">
-            </div>
+              <div class="user-block-basket-bill">Итого: 750 руб.</div>
+              <input type="submit" name="btn-basket" value="Оформить заказ">
+            </form>
           </div>
-          <div class="page-header-info">
+          <div class="user-block-info">
             С 10 до 20, ежедневно
-            <br>
             <strong>8 812 450-25-25</strong>
           </div>
         </div>
+      </div>
     </header>
 
     <main class="content">
-      <div class="wrapper clearfix">
+      <div class="wrapper">
         <div class="slider">
           <div class="slider-controls">
             <label for="btn-slider1"></label>
@@ -113,16 +118,16 @@
             <a class="btn btn-slider" href="#">Давайте оба!</a>
           </div>
         </div>
-        <div class="banner-container clearfix">
-          <div class="banner banner-bonus-raspberry">
+        <div class="banner clearfix">
+          <div class="banner-bonus banner-bonus-raspberry">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="btn-banner btn" href="#">Хочу варенье!</a>
+            <a class="btn btn-banner " href="#">Хочу варенье!</a>
           </div>
-          <div class="banner banner-bonus-choco">
+          <div class="banner-bonus banner-bonus-choco">
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="btn-banner btn" href="#">Хочу шоколадки!</a>
+            <a class="btn btn-banner" href="#">Хочу шоколадки!</a>
           </div>
         </div>
 
@@ -167,38 +172,39 @@
           <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <p class="about-item about-item-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p class="about-item about-item-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="about-item about-item-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
-          <p class="about-item about-item-temperature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+          <p class="about-item about-item-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <p class="about-item about-item-temperature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>
 
-        <div class="news-suscribe clearfix">
+        <div class="news-suscribe">
           <div class="blog-news">
             <h2 class="blog-news-title">Новое в нашем блоге</h2>
-            <a href="#">10&nbsp способов сервировки фруктовых щербетов к&nbsp столу</a>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="subscribe">
             <div class="subscribe-background">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="#" method="post">
-                <input class="subscribe-email" .type="email" placeholder="Электронная почта" required="">
+                <input class="subscribe-email" id="email-subscribe" type="email" name="email-sebscribe" required="">
+                <label for="email-subscribe">Электронная почта</label>
                 <input class="btn btn-subscribe" type="submit" value="Отправить" name="subscribe">
               </form>
             </div>
           </div>
         </div>
-      </div>
-      <div class="contacts">
-        <div class="wrapper">
+        <div class="contacts">
           <div class="contacts-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8qmE0rZ8fcfhHTAVrKZJJo5gT122_ODP&amp;width=1200&amp;height=429&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
           </div>
-        </div>
-        <div class="contacts-info">
-          <p>Адрес главного офиса и офлайн магазина:
-            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-            <p/>
-            <p>Для заказов по телефону:
-              <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
-            <a class="btn-contact btn" href="#">Форма обратной связи</a>
+          <div class="wrapper">
+            <div class="contacts-info">
+              <p>Адрес главного офиса и офлайн магазина:</p>
+              <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+              <p>Для заказов по телефону:
+                <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
+              <a class="btn-contact btn" href="">Форма обратной связи</a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -212,8 +218,8 @@
         </ul>
         <div class="footer-link">
           <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
           <a href="#">Наши документы</a>
+          <a href="#">О производстве</a>
           <a href="#">Экологические стандарты</a>
         </div>
         <div class="footer-copyright">
@@ -222,6 +228,21 @@
         </div>
       </div>
     </footer>
+    <div class="feedback">
+      <form class="feedback-form" action="#" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <a class="feedback-close-btn" href="#"></a>
+        <input type="text" id="name-field" name="name-field" required>
+        <label for="name-field">Как вас зовут?</label>
+        <input type="text" id="email-field" name="email-field" required>
+        <label for="email-field">Ваша почта для ответа?</label>
+        <textarea id="text-area" name="area" rows="6" required></textarea>
+        <label for="text-area">Напишите что-нибудь...</label>
+        <input type="submit" value="Отправить" name="feedback-btn">
+      </form>
     </div>
+  </div>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
+
+</html>
