@@ -14,22 +14,21 @@
   <div class="page-slider-wrapper">
     <header class="page-header">
       <div class="wrapper clearfix">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
-        </div>
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
         <nav class="main-nav">
-          <ul>
-            <li><a class="main-nav-catalog-active" href="#">Каталог</a>
+          <ul class="main-nav-list">
+            <li class="main-nav-item active">
+              <a href="">Каталог</a>
               <ul class="main-nav-sub">
-                <li><a class="main-nav-sub-new" href="#">Новинки</a></li>
-                <li><a class="main-nav-active" href="#">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
+                <li><span>Новинки</span></li>
+                <li class="main-nav-subitem active"><a href="catalog.html">Сливочное</a></li>
+                <li class="main-nav-subitem"><a href="">Щербеты</a></li>
+                <li class="main-nav-subitem"><a href="">Фруктовый лед</a></li>
+                <li class="main-nav-subitem"><a href="">Мелорин</a></li>
               </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
+            <li class="main-nav-item"><a href="">Доставка и оплата</a></li>
+            <li class="main-nav-item"><a href="">О Компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -118,9 +117,9 @@
                 <output name="less">100</output> руб. &mdash;
                 <output name="more">500</output> руб.</legend>
               <div class="range-slider">
-                <div class="range-bar"></div>
-                <div class="range-toggle"></div>
-                <div class="range-toggle"></div>
+                <div class="range-slider-bar"></div>
+                <div class="range-slider-toggle"></div>
+                <div class="range-slider-toggle"></div>
               </div>
             </fieldset>
             <fieldset class="filter-item filter-fat">
@@ -277,8 +276,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="wrapper clearfix">
-        <div class="page-footer-line"></div>
+      <div class="wrapper page-footer-line clearfix">
         <ul class="page-footer-social">
           <li><a class="social-btn social-btn-twitter" href="#">twitter</a></li>
           <li><a class="social-btn social-btn-instagram" href="#">instagram</a></li>
