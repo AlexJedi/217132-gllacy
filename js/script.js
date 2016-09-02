@@ -1,4 +1,4 @@
-var feedbackopen = document.querySelector(".btn-contact");
+var feedbackopen = document.querySelector(".btn-js-form");
 var feedbackclose = document.querySelector(".feedback-close-btn");
 var feedbackquery = document.querySelector(".feedback");
 

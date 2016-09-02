@@ -31,66 +31,88 @@
             <li class="main-nav-item"><a href="">О Компании</a></li>
           </ul>
         </nav>
-        <div class="user-block">
-          <div class="user-block-item">
-            <a class="user-block-btn user-block-search-btn" href="#">Поиск</a>
-            <form class="user-block-search-form user-block-form" action="#" method="get">
-              <input type="text" id="user-block-search-field" name="btn-search" required="">
-              <label for="user-block-search-field">Что ищем?</label>
-            </form>
-          </div>
-          <div class="user-block-item">
-            <a class="user-block-btn user-block-login-btn" href="#">Вход</a>
-            <form class="user-block-login-form user-block-form" action="#" method="post">
-              <input type="email" id="user-block-email-field" name="email" required="">
-              <label for="user-block-email-field">Электронная почта</label>
-              <input type="password" id="user-block-password-field" name="pass" required="">
-              <label for="user-block-password-field">Пароль</label>
-              <input type="submit" value="Войти" name="btn-login">
+
+        <div class="user">
+
+          <form class="user-item" action="#" method="get">
+
+            <a class="user-btn user-search-btn" href="#">Поиск</a>
+
+            <fieldset class="user-item-search user-item-inner">
+              <input class="input" type="text" id="user-search-field" placeholder="Что ищем?" name="search" required="">
+            </fieldset>
+
+          </form>
+
+          <form class="user-item" action="#" method="post">
+
+            <a class="user-btn user-btn-login" href="#">Вход</a>
+
+            <fieldset class="user-item-login user-item-inner">
+              <input class="input" type="email" id="user-email-field" placeholder="Электронная почта" name="email" required="">
+              <input class="input" type="password" id="user-password-field" placeholder="Пароль" name="pass" required="">
+              <input class="btn" type="submit" value="Войти" name="btn-login">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
-            </form>
-          </div>
-          <div class="user-block-item">
-            <a class="user-block-btn user-block-basket-btn" href="#">Пусто</a>
-            <form class="user-block-basket-form user-block-form">
-              <table class="user-block-basket-table">
+            </fieldset>
+
+          </form>
+
+          <form class="user-item">
+
+            <a class="user-btn user-btn-basket" href="#">Пусто</a>
+
+            <fieldset class="user-item-basket user-item-inner">
+
+              <table class="user-table">
                 <tr>
-                  <td class="user-block-basket-cell">
-                    <a class="btn-delete" href="#" title="Delete"></a>
+                  <td>
+                    <a class="user-table-delete" href="#" title="delete"></a>
                   </td>
-                  <td class="user-block-basket-cell">
-                    <a class="user-block-basket-link" href="#">
-                      <img src="img/orange.png" width="34" height="34" alt=""> Пломбир с апельсиновым джемом
+                  <td>
+                    <a class="user-table-link" href="#">
+                      <img src="img/orange.png" width="34" height="34" alt="">
+                      Пломбир с апельсиновым джемом
                     </a>
                   </td>
-                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 200 руб.</span></td>
-                  <td class="user-block-basket-cell">300 руб.</td>
+                  <td>1,5 кг <span class="user-table-price">х 200 руб.</span></td>
+                  <td>300 руб.</td>
                 </tr>
+
                 <tr>
-                  <td class="user-block-basket-cell">
-                    <a class="btn-delete" href="#" title="Delete"></a>
+                  <td>
+                    <a class="user-table-delete" href="#" title="delete"></a>
                   </td>
-                  <td class="user-block-basket-cell">
-                    <a class="user-block-basket-link" href="#">
-                      <img src="img/strawberry.png" width="34" height="34" alt=""> Клубничный пломбир с присыпкой из белого шоколада
+                  <td>
+                    <a class="user-table-link" href="#">
+                      <img src="img/strawberry.png" width="34" height="34" alt="">
+                      Клубничный пломбир с присыпкой из белого шоколада
                     </a>
                   </td>
-                  <td class="user-block-basket-cell">1,5 кг <span class="user-block-basket-price">х 300 руб.</span></td>
-                  <td class="user-block-basket-cell">450 руб.</td>
+                  <td>1,5 кг <span class="user-table-price">х 300 руб.</span></td>
+                  <td>450 руб.</td>
                 </tr>
+
               </table>
-              <div class="user-block-basket-bill">Итого: 750 руб.</div>
-              <input type="submit" name="btn-basket" value="Оформить заказ">
-            </form>
-          </div>
-          <div class="user-block-info">
+
+              <div class="user-table-bill">Итого: 750 руб.</div>
+
+              <input class="btn" type="submit" name="btn-basket" value="Оформить заказ">
+            </fieldset>
+
+          </form>
+
+          <div class="user-info">
             С 10 до 20, ежедневно
             <strong>8 812 450-25-25</strong>
           </div>
+
         </div>
+
       </div>
+
     </header>
+
 
     <main class="content">
       <div class="wrapper clearfix">
@@ -105,12 +127,14 @@
           <form action="#" method="post">
             <fieldset class="filter-item filter-sort">
               <legend>Сортировка:</legend>
-              <select name="sort" id="sort-id">
-                <option value="popular">по популярности</option>
-                <option value="cheap">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
+              <div>
+                <select name="sort" id="sort-id">
+                  <option value="popular">по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+              </div>
             </fieldset>
             <fieldset class="filter-item filter-price">
               <legend>Цена:
@@ -195,7 +219,7 @@
             <div class="products-item-img">
               <img src="img/catalog/cowberry.png" width="267" height="267" alt="berry">
             </div>
-            <div class="products-item-price"><span>415<span class="rub">р</span></span>/кг</div>
+            <div class="products-item-price"><span>325<span class="rub">р</span></span>/кг</div>
             <a class="products-item-title" href="#">Сливочное с брусничным джемом</a>
             <a class="btn" href="#">Быстрый просмотр</a>
           </div>
