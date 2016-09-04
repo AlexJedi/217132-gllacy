@@ -1,14 +1,13 @@
-var feedbackopen = document.querySelector(".btn-js-form");
-var feedbackclose = document.querySelector(".feedback-close-btn");
-var feedbackquery = document.querySelector(".feedback");
+var feedbackopen = document.querySelector(".js-btn-form");
+var feedbackclose = document.querySelector(".form-feedback-close");
+var feedbackquery = document.querySelector(".js-modal-feedback");
 
 feedbackclose.addEventListener("click", function (event) {
   event.preventDefault();
-  feedbackquery.classList.remove("feedback-form-bounce");
-	feedbackquery.classList.remove("feedback-form-shake");
+	feedbackquery.classList.remove("form-feedback-shake");
 });
 
 feedbackopen.addEventListener("click", function (event) {
 	event.preventDefault();
-	feedbackquery.classList.add("feedback-form-bounce");
+	feedbackquery.classList.add("form-feedback-shake");
 });
