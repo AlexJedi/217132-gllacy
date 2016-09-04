@@ -34,13 +34,11 @@ p
 }
 h1
 {
-    font-weight:700;
     font-size: 35px;
 
     max-height: 33px;
     margin: 0;
     margin-bottom: 31px;
-    margin-left: 5px;
 }
 fieldset
 {
@@ -102,7 +100,7 @@ textarea:valid
 .input + label,
 textarea + label
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 16px;
 
     position: absolute;
@@ -140,7 +138,7 @@ textarea:valid + label
 }
 .btn
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 18px;
 
     display: inline-block;
@@ -164,7 +162,6 @@ textarea:valid + label
 }
 .btn-large
 {
-    font-weight:700;
     font-size: 32px;
 
     padding: 20px 43px;
@@ -193,16 +190,10 @@ textarea:valid + label
 
     width: 1200px;
     margin: 0 auto;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 27px;
+    padding-left: 27px;
 }
-.wrapper::after
-{
-    display: table;
-    clear: both;
-
-    content: '';
-}
+.wrapper::after,
 .clearfix::after
 {
     display: table;
@@ -214,12 +205,12 @@ textarea:valid + label
 {
     position: relative;
 
-    display: block;
     float: left;
 
     width: 153px;
     margin-top: 10px;
     margin-right: 17px;
+    margin-left: -10px;
 }
 .main-nav
 {
@@ -237,7 +228,7 @@ textarea:valid + label
 }
 .main-nav-item
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 16px;
 
     position: relative;
@@ -303,7 +294,7 @@ textarea:valid + label
 }
 .main-nav-sub
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 14px;
 
     position: absolute;
@@ -372,12 +363,12 @@ textarea:valid + label
     float: left;
 
     margin-top: 23px;
-    margin-left: 10px;
+    margin-left: 9px;
     padding-bottom: 5px;
 }
 .user-item:last-of-type
 {
-    margin-right: 14px;
+    margin-right: 5px;
 }
 .user-item-inner
 {
@@ -404,7 +395,7 @@ textarea:valid + label
 }
 .user-item .input
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 14px;
 
     position: relative;
@@ -423,7 +414,7 @@ textarea:valid + label
 }
 .user-item-login a
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 13px;
 
     display: block;
@@ -467,22 +458,31 @@ textarea:valid + label
 }
 .user-info
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 14px;
 
     display: block;
 
-    margin-top: 72px;
-    margin-right: 13px;
+    margin-top: 73px;
+    margin-right: 3px;
 
     text-align: right;
 }
 .user-info strong
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 22px;
 
     display: block;
+}
+.user-btn
+{
+    font-weight: 400;
+    font-size: 14px;
+
+    display: block;
+
+    border-radius: 30px;
 }
 .user-btn-search
 {
@@ -493,34 +493,19 @@ textarea:valid + label
     width: 32px;
     height: 32px;
 
-    border-radius: 30px;
     background: rgba(255, 255, 255, .2) url('../img/sprite.png') no-repeat -4px -286px;
 }
 .user-btn-login
 {
-    font-weight:400;
-    font-size: 14px;
-
-    display: block;
-
     padding: 7px 17px 7px 43px;
 
-    border-radius: 30px;
     background: rgba(255, 255, 255, .2) url('../img/sprite.png') no-repeat 5px -191px;
 }
 .user-btn-basket
 {
-    font-weight:400;
-    font-size: 14px;
-
-    display: block;
-
-    border-radius: 30px;
-    background: rgba(255, 255, 255, .2) url('../img/sprite.png') no-repeat 5px -382px;
-}
-.user-btn-basket
-{
     padding: 7px 16px 7px 45px;
+
+    background: rgba(255, 255, 255, .2) url('../img/sprite.png') no-repeat 5px -382px;
 }
 .empty .user-btn-basket
 {
@@ -542,7 +527,7 @@ textarea:valid + label
 }
 .user-table
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 13px;
 
     margin-bottom: 17px;
@@ -649,7 +634,7 @@ textarea:valid + label
 }
 .user-table-bill
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 15px;
 
     margin-right: 11px;
@@ -667,7 +652,7 @@ textarea:valid + label
 }
 .cart-field-price
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 15px;
 }
 .slider-radio[id='btn-slider1']:checked ~ .page-wrapper
@@ -707,7 +692,7 @@ textarea:valid + label
     position: absolute;
     z-index: 2;
     top: 84%;
-    left: 5px;
+    left: -3px;
 }
 .slider-controls label
 {
@@ -733,18 +718,9 @@ textarea:valid + label
 }
 #btn-slider1:checked ~ .page-wrapper #slide-1,
 #btn-slider2:checked ~ .page-wrapper #slide-2,
-#btn-slider3:checked ~ .page-wrapper #slide-3
-{
-    display: block;
-}
-.slider-radio[id='btn-slider1']:checked ~ .page-wrapper #slide-1
-{
-    display: block;
-}
-.slider-radio[id='btn-slider2']:checked ~ .page-wrapper #slide-2
-{
-    display: block;
-}
+#btn-slider3:checked ~ .page-wrapper #slide-3,
+.slider-radio[id='btn-slider1']:checked ~ .page-wrapper #slide-1,
+.slider-radio[id='btn-slider2']:checked ~ .page-wrapper #slide-2,
 .slider-radio[id='btn-slider3']:checked ~ .page-wrapper #slide-3
 {
     display: block;
@@ -772,8 +748,7 @@ textarea:valid + label
 }
 .banner-bonus-raspberry
 {
-    margin-right: 24px;
-    margin-left: 5px;
+    margin-right: 19px;
 
     background-image: url('../img/index/raspberry_background.jpg');
 }
@@ -783,7 +758,7 @@ textarea:valid + label
 }
 .banner-bonus h2
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 35px;
 
     overflow: hidden;
@@ -796,7 +771,7 @@ textarea:valid + label
 }
 .banner-bonus p
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 18px;
 
     overflow: hidden;
@@ -814,7 +789,7 @@ textarea:valid + label
 .slider .btn
 {
     position: absolute;
-    bottom: 40px;
+    bottom: 44px;
     left: 50%;
 
     -webkit-transform: translateX(-50%);
@@ -822,7 +797,7 @@ textarea:valid + label
 }
 .slider h2
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 60px;
     line-height: 60px;
 
@@ -837,8 +812,8 @@ textarea:valid + label
 }
 .products
 {
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -13px;
+    margin-left: -13px;
 }
 .products-item
 {
@@ -934,7 +909,7 @@ textarea:valid + label
 }
 .products-item-price
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 30px;
 
     position: absolute;
@@ -945,7 +920,7 @@ textarea:valid + label
 }
 .products-item-price span
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 45px;
 }
 .products-item-price .rub
@@ -964,7 +939,7 @@ textarea:valid + label
 }
 .products-item-title
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
 
@@ -986,9 +961,7 @@ textarea:valid + label
 {
     position: relative;
 
-    margin-right: 13px;
     margin-bottom: 40px;
-    margin-left: 5px;
     padding-top: 29px;
     padding-right: 21px;
     padding-bottom: 9px;
@@ -1000,7 +973,7 @@ textarea:valid + label
 }
 .about h2
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
 
@@ -1079,7 +1052,6 @@ textarea:valid + label
 .news
 {
     margin-bottom: 40px;
-    margin-left: 5px;
 }
 .news-blog
 {
@@ -1098,7 +1070,7 @@ textarea:valid + label
 }
 .news-blog a
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 
@@ -1119,7 +1091,7 @@ textarea:valid + label
 }
 .news-blog h2
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 16px;
 
     margin: 0;
@@ -1215,7 +1187,7 @@ textarea:valid + label
 }
 .contacts-info
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 14px;
 
     position: absolute;
@@ -1236,28 +1208,30 @@ textarea:valid + label
     display: block;
 
     width: 260px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 .contacts-info p:nth-of-type(1)
 {
     width: 159px;
-    margin-bottom: 9px;
+    margin-bottom: 1px;
 }
 .contacts-info strong
 {
+    line-height: 24px;
+
     display: block;
 
     margin-bottom: 19px;
 }
 .contacts-tel
 {
-    font-weight:700;
+    font-weight: 700;
     font-size: 18px;
 
     display: block;
 
-    margin-top: 8px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 
     color: #323232;
 }
@@ -1270,11 +1244,7 @@ textarea:valid + label
     margin-bottom: 0;
     padding: 0;
 }
-.page-footer-line>.wrapper
-{
-    position: relative;
-}
-.page-footer-line>.wrapper::before
+.page-footer-line > .wrapper::before
 {
     position: absolute;
     top: 0;
@@ -1298,7 +1268,6 @@ textarea:valid + label
     margin-top: 35px;
     margin-right: 219px;
     margin-bottom: 30px;
-    margin-left: 3px;
     padding: 0;
 
     list-style: none;
@@ -1307,7 +1276,6 @@ textarea:valid + label
 }
 .social li
 {
-
     display: inline-block;
 
     margin-right: 7px;
@@ -1377,7 +1345,7 @@ textarea:valid + label
 }
 .page-footer-links a
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 13px;
     line-height: 1.2;
 
@@ -1385,7 +1353,7 @@ textarea:valid + label
 
     float: left;
 
-    width: 170px;
+    width: 163px;
     margin-bottom: 8px;
 
     text-decoration: underline;
@@ -1412,16 +1380,13 @@ textarea:valid + label
 {
     float: right;
 
-    margin-right: 11px;
     padding-top: 20px;
     padding-bottom: 26px;
 }
 .page-footer-copyright p
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 12px;
-
-    margin-top: 5px;
 }
 .page-footer-copyright a
 {
@@ -1449,14 +1414,13 @@ textarea:valid + label
 .breadcrumbs
 {
     margin: 0;
-    margin-top: -18px;
-    margin-left: 6px;
+    margin-top: -16px;
     margin-bottom: 14px;
     padding: 0;
 }
 .breadcrumbs li
 {
-    font-weight:400;
+    font-weight: 400;
     font-size: 14px;
 
     position: relative;
@@ -1495,7 +1459,6 @@ textarea:valid + label
     font-size: 0;
 
     margin-bottom: 17px;
-    margin-left: 5px;
 }
 .filter-item
 {
@@ -1510,7 +1473,7 @@ textarea:valid + label
 }
 .filter legend
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 14px;
 
     margin-bottom: 7px;
@@ -1520,7 +1483,7 @@ textarea:valid + label
 .filter option,
 .filter select
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 16px;
 }
 .filter-item select
@@ -1728,7 +1691,7 @@ input[type='checkbox']:disabled + label::after
 }
 .filter-btn
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 16px;
 
     width: 144px;
@@ -1757,7 +1720,7 @@ input[type='checkbox']:disabled + label::after
 {
     font-weight: 500;
 
-    margin-top: 45px;
+    margin-top: 42px;
     margin-bottom: 30px;
 
     text-align: right;
@@ -1882,7 +1845,7 @@ input[type='checkbox']:disabled + label::after
 }
 .form-feedback p
 {
-    font-weight:500;
+    font-weight: 500;
     font-size: 24px;
 
     margin: 0 0 20px;
