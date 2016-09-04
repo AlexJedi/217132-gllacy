@@ -4,10 +4,10 @@ var feedbackquery = document.querySelector(".js-modal-feedback");
 
 feedbackclose.addEventListener("click", function (event) {
   event.preventDefault();
-	feedbackquery.classList.remove("form-feedback-shake");
+	feedbackquery.classList.remove("shake");
 });
 
 feedbackopen.addEventListener("click", function (event) {
 	event.preventDefault();
-	feedbackquery.classList.add("form-feedback-shake");
+	feedbackquery.classList.add("shake");
 });
