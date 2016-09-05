@@ -1620,7 +1620,7 @@ textarea:valid + label
 }
 .radio-wrap
 {
-    padding: 10px 0 3px 0;
+    padding: 10px 0 3px 15px;
 }
 .checkbox-wrap
 {
@@ -1647,6 +1647,10 @@ input[type='radio'] + label
     -webkit-user-select: none;
             user-select: none;
 }
+input[type='radio'] + label
+{
+    margin-right: 18px;
+}
 input[type='radio'] + label::before,
 input[type='checkbox'] + label::before
 {
@@ -1670,7 +1674,6 @@ input[type='checkbox'] + label::before
 input[type='radio'] + label::before
 {
     margin-right: 13px;
-    margin-left: 18px;
 
     border-radius: 50%;
 }
