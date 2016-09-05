@@ -168,6 +168,7 @@ textarea:valid + label
     background-image: -o-linear-gradient(to top, #e74a35 0%, #f26843 100%);
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, .64);
+    white-space: nowrap;
 }
 .btn-large
 {
@@ -178,6 +179,7 @@ textarea:valid + label
     border-radius: 50px;
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, .64);
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+    white-space: nowrap;
 }
 .btn:hover
 {
@@ -419,7 +421,7 @@ textarea:valid + label
 .user-item-search .input + label
 {
     top: 32px;
-    left: 28px;
+    left: 33px;
 }
 .user-item-login a
 {
@@ -446,7 +448,7 @@ textarea:valid + label
 .user-item-login .input:nth-of-type(1) + label
 {
     top: 32px;
-    left: 30px;
+    left: 33px;
 }
 .user-item-login .input:nth-of-type(2) + label
 {
@@ -797,12 +799,14 @@ textarea:valid + label
     float: right;
 
     padding: 12px 22px;
+    white-space: nowrap;
 }
 .slider .btn
 {
     position: absolute;
     bottom: 44px;
     left: 50%;
+    white-space: nowrap;
 
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -872,18 +876,14 @@ textarea:valid + label
 }
 .products-item .btn
 {
-    padding: 10px 16px;
-}
-.products-item .btn
-{
     position: absolute;
-    bottom: -60px;
+    bottom: -53px;
     left: 50%;
 
     display: none;
 
-    width: 80%;
-    padding: 13px;
+    padding: 13px 17px;
+    white-space: nowrap;
 
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1166,6 +1166,7 @@ textarea:valid + label
 .news-subscribe-inner .btn
 {
     padding: 11px 19px;
+    white-space: nowrap;
 
     vertical-align: top;
 }
@@ -1255,6 +1256,7 @@ textarea:valid + label
 .contacts-info .btn
 {
     padding: 13px 26px;
+    white-space: nowrap;
 }
 .page-footer
 {
@@ -1295,7 +1297,7 @@ textarea:valid + label
 {
     display: inline-block;
 
-    margin-right: 7px;
+    margin-right: 5px;
     padding: 3px;
 
     vertical-align: top;
@@ -1471,6 +1473,14 @@ textarea:valid + label
     color: #ffbc9e;
     border-bottom: 1px solid #a7a294;
 }
+.breadcrumbs li:last-child > a
+{
+    border:none;
+}
+.breadcrumbs li:last-child > a:hover
+{
+    color: #fff;
+}
 .filter
 {
     font-size: 0;
@@ -1610,11 +1620,11 @@ textarea:valid + label
 }
 .radio-wrap
 {
-    padding: 10px 15px 3px 0;
+    padding: 10px 0 3px 0;
 }
 .checkbox-wrap
 {
-    padding: 9px 15px 4px 0;
+    padding: 10px 0 3px 15px;
 }
 .radio-wrap label,
 .checkbox-wrap label
@@ -1631,6 +1641,8 @@ input[type='radio'] + label
 {
     position: relative;
 
+    margin-right: 22px;
+
     cursor: pointer;
     -webkit-user-select: none;
             user-select: none;
@@ -1646,8 +1658,7 @@ input[type='checkbox'] + label::before
     box-sizing: content-box;
     width: 12px;
     height: 12px;
-    margin-right: 18px;
-    margin-left: 20px;
+    margin-right: 13px;
 
     content: '';
     cursor: pointer;
@@ -1685,7 +1696,7 @@ input[type='checkbox']:checked + label::after
 {
     position: absolute;
     top: 5px;
-    left: 23px;
+    left: 4px;
 
     width: 12px;
     height: 7px;
@@ -1755,7 +1766,7 @@ input[type='checkbox']:disabled + label::after
     width: 27px;
     height: 27px;
     padding-top: 4px;
-    margin-left: 1px;
+    margin-right: 3px;
 
     text-align: center;
     vertical-align: top;
@@ -1823,8 +1834,8 @@ input[type='checkbox']:disabled + label::after
 }
 .paginator-control-prev::before
 {
-    top: 10px;
-    left: 4px;
+    top: 9px;
+    left: 1px;
 }
 .modal
 {
@@ -1932,6 +1943,7 @@ input[type='checkbox']:disabled + label::after
     float: right;
 
     padding: 11px 22px;
+    white-space: nowrap;
 }
 iframe
 {
