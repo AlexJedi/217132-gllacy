@@ -48,8 +48,10 @@
           <a class="user-btn user-btn-search" href="#">Поиск</a>
 
           <fieldset class="user-item-search user-item-inner">
-            <input class="input" type="text" id="user-search-field" name="search" required="">
-            <label for="user-search-field">Что ищем?</label>
+            <div class="input-wrap">
+              <input class="input" type="text" id="user-search-field" name="search" required="">
+              <label for="user-search-field">Что ищем?</label>
+            </div>
           </fieldset>
 
         </form>
@@ -59,10 +61,14 @@
           <a class="user-btn user-btn-login" href="#">Вход</a>
 
           <fieldset class="user-item-login user-item-inner">
-            <input class="input" type="email" id="user-email-field" name="email" required="">
-            <label for="user-email-field">Электронная почта</label>
-            <input class="input" type="password" id="user-password-field" name="pass" required="">
-            <label for="user-password-field">Пароль</label>
+            <div class="input-wrap">
+              <input class="input" type="email" id="user-email-field" name="email" required="">
+              <label for="user-email-field">Электронная почта</label>
+            </div>
+            <div class="input-wrap">
+              <input class="input" type="password" id="user-password-field" name="pass" required="">
+              <label for="user-password-field">Пароль</label>
+            </div>
             <input class="btn" type="submit" value="Войти" name="btn-login">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -201,7 +207,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/orange.png" width="267" height="267" alt="orange">
+            <img src="img/orange.jpg" width="267" height="267" alt="orange">
           </div>
           <div class="products-item-price"><span>310<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -210,7 +216,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/coffee.png" width="267" height="267" alt="coffee">
+            <img src="img/coffee.jpg" width="267" height="267" alt="coffee">
           </div>
           <div class="products-item-price"><span>380<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -219,7 +225,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/strawberry.png" width="267" height="267" alt="strawberry">
+            <img src="img/strawberry.jpg" width="267" height="267" alt="strawberry">
           </div>
           <div class="products-item-price"><span>355<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -228,7 +234,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/caramel.png" width="267" height="267" alt="caramel">
+            <img src="img/caramel.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>415<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -237,7 +243,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/cowberry.png" width="267" height="267" alt="berry">
+            <img src="img/catalog/cowberry.jpg" width="267" height="267" alt="berry">
           </div>
           <div class="products-item-price"><span>325<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное с брусничным джемом</a>
@@ -246,7 +252,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/blueberry.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/blueberry.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>410<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
@@ -255,7 +261,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/lemon.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/lemon.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>375<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
@@ -264,7 +270,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/choco.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/choco.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>320<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное с шоколадной стружкой</a>
@@ -273,7 +279,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/vanilla.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/vanilla.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>440<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
@@ -282,7 +288,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/menthol.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/menthol.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>435<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочноe с ментоловым сиропом</a>
@@ -291,7 +297,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/black_choco.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/black_choco.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>355<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное с кусочками черного шоколада</a>
@@ -300,7 +306,7 @@
 
         <div class="products-item">
           <div class="products-item-img">
-            <img src="img/catalog/mint.png" width="267" height="267" alt="caramel">
+            <img src="img/catalog/mint.jpg" width="267" height="267" alt="caramel">
           </div>
           <div class="products-item-price"><span>420<span class="rub">р</span></span>/кг</div>
           <a class="products-item-title" href="#">Сливочное с мятным сиропом</a>

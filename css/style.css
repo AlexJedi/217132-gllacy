@@ -104,7 +104,8 @@ textarea + label
     font-size: 16px;
 
     position: absolute;
-    left: 41px;
+    left: 19px;
+    top: 13px;
 
     cursor: text;
     -webkit-transition-duration: .5s;
@@ -121,8 +122,8 @@ textarea:focus + label
 {
     font-size: 11px;
 
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-31px);
+            transform: translateY(-31px);
 
     color: #8fbdec;
 }
@@ -131,19 +132,35 @@ textarea:valid + label
 {
     font-size: 11px;
 
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translateY(-31px);
+            transform: translateY(-31px);
 
     color: #b4b4b4;
 }
+.input-wrap
+{
+    position:relative;
+
+    display:inline-block;
+
+    font-size: 0;
+
+    vertical-align: top;
+}
+.textarea-wrap
+{
+    position:relative;
+
+    display:block;
+}
 .content-catalog
 {
-  position: relative;
-  top: -5px;
+    position: relative;
+    top: -5px;
 }
 .content-catalog .products-item
 {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 .btn
 {
@@ -418,11 +435,6 @@ textarea:valid + label
     width: 311px;
     margin: 0;
 }
-.user-item-search .input + label
-{
-    top: 32px;
-    left: 33px;
-}
 .user-item-login a
 {
     font-weight: 400;
@@ -444,16 +456,6 @@ textarea:valid + label
 .user-item-login .input
 {
     width: 242px;
-}
-.user-item-login .input:nth-of-type(1) + label
-{
-    top: 32px;
-    left: 33px;
-}
-.user-item-login .input:nth-of-type(2) + label
-{
-    top: 96px;
-    left: 30px;
 }
 .user-item-login .btn
 {
@@ -724,6 +726,10 @@ textarea:valid + label
     border: 2px solid #fff;
     border-radius: 50%;
 }
+.slider-controls label:hover
+{
+    background: rgba(255, 255, 255, 0.4);
+}
 #slide-1,
 #slide-2,
 #slide-3
@@ -766,11 +772,11 @@ textarea:valid + label
 {
     margin-right: 26px;
 
-    background-image: url('../img/index/raspberry_background.jpg');
+    background: #c9385c url('../img/index/raspberry_background.jpg');
 }
 .banner-bonus-choco
 {
-    background-image: url('../img/index/choco_background.jpg');
+    background: #502e23 url('../img/index/choco_background.jpg');
 }
 .banner-bonus h2
 {
@@ -980,7 +986,7 @@ textarea:valid + label
 
     color: #323232;
     border-radius: 14px;
-    background: url('../img/index/seo_background.jpg');
+    background: #eae0c7 url('../img/index/seo_background.jpg');
 }
 .about h2
 {
@@ -1079,7 +1085,7 @@ textarea:valid + label
     vertical-align: top;
 
     border-radius: 15px;
-    background: url('../img/index/blog_background.jpg') no-repeat -30px -220px;
+    background: #fff url('../img/index/blog_background.jpg') no-repeat -30px -220px;
 }
 .news-blog a
 {
@@ -1091,7 +1097,7 @@ textarea:valid + label
     overflow: hidden;
 
     max-width: 303px;
-    max-height: 100px;
+    max-height: 90px;
 
     text-decoration: underline;
 
@@ -1159,8 +1165,6 @@ textarea:valid + label
 .news-subscribe-inner .input + label
 {
     font-size: 16px;
-
-    top: 148px;
 }
 
 .news-subscribe-inner .btn
@@ -1328,6 +1332,7 @@ textarea:valid + label
 }
 .social-btn:active
 {
+    opacity: .8;
     border: 3px solid rgba(255, 255, 255, .7);
     box-shadow: inset 0 2px 3px 0 #989998;
 }
@@ -1668,7 +1673,7 @@ input[type='checkbox'] + label::before
     cursor: pointer;
     vertical-align: bottom;
 
-    border: 3px solid #aabab0;
+    border: 3px solid #99afa1;
     box-shadow: 0 0 0 1px #f8f7f4;
 }
 input[type='radio'] + label::before
@@ -1698,8 +1703,8 @@ input[type='checkbox'] + label::before
 input[type='checkbox']:checked + label::after
 {
     position: absolute;
-    top: 5px;
-    left: 4px;
+    top: 4px;
+    left: 3px;
 
     width: 12px;
     height: 7px;
@@ -1784,7 +1789,6 @@ input[type='checkbox']:disabled + label::after
     background-color: rgba(255, 255, 255, .2);
 }
 .paginator .active,
-.paginator-page:hover,
 .paginator-page:active
 {
     width: 27px;
@@ -1924,18 +1928,6 @@ input[type='checkbox']:disabled + label::after
 {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-}
-.form-feedback .input:nth-of-type(1) + label
-{
-    top: 76px;
-}
-.form-feedback .input:nth-of-type(2) + label
-{
-    top: 140px;
-}
-.form-feedback textarea + label
-{
-    top: 202px;
 }
 .form-feedback .input
 {

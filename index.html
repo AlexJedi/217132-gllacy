@@ -55,8 +55,10 @@
             <a class="user-btn user-btn-search" href="#">Поиск</a>
 
             <fieldset class="user-item-search user-item-inner">
-              <input class="input" type="text" id="user-search-field" name="search" required="">
-              <label for="user-search-field">Что ищем?</label>
+              <div class="input-wrap">
+                <input class="input" type="text" id="user-search-field" name="search" required="">
+                <label for="user-search-field">Что ищем?</label>
+              </div>
             </fieldset>
 
           </form>
@@ -66,10 +68,14 @@
             <a class="user-btn user-btn-login" href="#">Вход</a>
 
             <fieldset class="user-item-login user-item-inner">
-              <input class="input" type="email" id="user-email-field" name="email" required="">
-              <label for="user-email-field">Электронная почта</label>
-              <input class="input" type="password" id="user-password-field" name="pass" required="">
-              <label for="user-password-field">Пароль</label>
+              <div class="input-wrap">
+                <input class="input" type="email" id="user-email-field" name="email" required="">
+                <label for="user-email-field">Электронная почта</label>
+              </div>
+              <div class="input-wrap">
+                <input class="input" type="password" id="user-password-field" name="pass" required="">
+                <label for="user-password-field">Пароль</label>
+              </div>
               <input class="btn" type="submit" value="Войти" name="btn-login">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
@@ -180,7 +186,7 @@
 
           <div class="products-item hit">
             <div class="products-item-img">
-              <img src="img/orange.png" width="267" height="267" alt="orange">
+              <img src="img/orange.jpg" width="267" height="267" alt="orange">
             </div>
             <div class="products-item-price">
               <span>310<span class="rub">р</span></span>/кг
@@ -191,7 +197,7 @@
 
           <div class="products-item hit">
             <div class="products-item-img">
-              <img src="img/coffee.png" width="267" height="267" alt="coffee">
+              <img src="img/coffee.jpg" width="267" height="267" alt="coffee">
             </div>
             <div class="products-item-price"><span>380<span class="rub">р</span></span>/кг</div>
             <a class="products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -200,7 +206,7 @@
 
           <div class="products-item hit">
             <div class="products-item-img">
-              <img src="img/strawberry.png" width="267" height="267" alt="strawberry">
+              <img src="img/strawberry.jpg" width="267" height="267" alt="strawberry">
             </div>
             <div class="products-item-price"><span>355<span class="rub">р</span></span>/кг</div>
             <a class="products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -209,7 +215,7 @@
 
           <div class="products-item hit">
             <div class="products-item-img">
-              <img src="img/caramel.png" width="267" height="267" alt="caramel">
+              <img src="img/caramel.jpg" width="267" height="267" alt="caramel">
             </div>
             <div class="products-item-price"><span>415<span class="rub">р</span></span>/кг</div>
             <a class="products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -237,8 +243,10 @@
             <div class="news-subscribe-inner">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <form action="#" method="post">
-                <input class="input" id="email-subscribe" type="email" name="email-subscribe" required="">
-                <label for="email-subscribe">Электронная почта</label>
+                <div class="input-wrap">
+                  <input class="input" id="email-subscribe" type="email" name="email-subscribe" required="">
+                  <label for="email-subscribe">Электронная почта</label>
+                </div>
                 <input class="btn" type="submit" value="Отправить" name="subscribe">
               </form>
             </div>
@@ -303,12 +311,18 @@
         <form class="form-feedback clearfix" action="#" method="post">
           <p>Мы обязательно вам ответим!</p>
           <a class="form-feedback-close" href="#"></a>
-          <input class="input" type="text" id="name-field" name="name-field" required>
-          <label for="name-field">Как вас зовут?</label>
-          <input class="input" type="text" id="email-field" name="email-field" required>
-          <label for="email-field">Ваша почта для ответа?</label>
-          <textarea id="text-area" name="area" required></textarea>
-          <label for="text-area">Напишите что-нибудь...</label>
+          <div class="input-wrap">
+            <input class="input" type="text" id="name-field" name="name-field" required>
+            <label for="name-field">Как вас зовут?</label>
+          </div>
+          <div class="input-wrap">
+            <input class="input" type="text" id="email-field" name="email-field" required>
+            <label for="email-field">Ваша почта для ответа?</label>
+          </div>
+          <div class="textarea-wrap">
+            <textarea id="text-area" name="area" required></textarea>
+            <label for="text-area">Напишите что-нибудь...</label>
+          </div>
           <input class="btn" type="submit" value="Отправить" name="feedback-btn">
         </form>
       </div>
