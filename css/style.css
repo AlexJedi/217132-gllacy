@@ -14,6 +14,8 @@ body
 {
     font: 400 16px / 20px 'Roboto', 'Arial', sans-serif;
 
+    min-width: 1200px;
+
     color: #fff;
     background: #849d8f;
 }
@@ -139,9 +141,9 @@ textarea:valid + label
 }
 .input-wrap
 {
-    position:relative;
+    position: relative;
 
-    display:inline-block;
+    display: inline-block;
 
     font-size: 0;
 
@@ -149,9 +151,7 @@ textarea:valid + label
 }
 .textarea-wrap
 {
-    position:relative;
-
-    display:block;
+    position: relative;
 }
 .content-catalog
 {
@@ -1864,7 +1864,7 @@ input[type='checkbox']:disabled + label::after
     top: 50%;
     left: 50%;
 
-    display: block;
+    display: none;
 
     width: 478px;
     height: 443px;
@@ -1952,6 +1952,8 @@ iframe
 {
     0%
     {
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
         -webkit-transform: translateY(-50px);
                 transform: translateY(-50px);
     }
