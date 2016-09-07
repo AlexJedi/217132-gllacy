@@ -1864,7 +1864,7 @@ input[type='checkbox']:disabled + label::after
     top: 50%;
     left: 50%;
 
-    display: none;
+    display: block;
 
     width: 478px;
     height: 443px;
@@ -1883,6 +1883,7 @@ input[type='checkbox']:disabled + label::after
     -webkit-animation: shake 1s;
             animation: shake 1s;
 }
+
 .form-feedback p
 {
     font-weight: 500;
