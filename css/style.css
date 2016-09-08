@@ -964,7 +964,9 @@ textarea:valid + label
     display: block;
 
     max-width: 258px;
-    min-height: 39px;
+    height: 40px;
+
+    overflow: hidden;
 
     text-align: center;
     vertical-align: middle;
@@ -1187,11 +1189,11 @@ textarea:valid + label
     z-index: 1;
 
     width: 1200px;
-    margin:auto;
-    padding:auto;
+    margin: auto;
+    padding: auto;
     height: 430px;
 
-    background: url('../img/map.png') no-repeat 0 0;
+    background: #f7f1d9 url('../img/map.png') no-repeat 0 0;
 }
 .contacts-map::before
 {
